@@ -8,8 +8,8 @@
 var cookbookRepository = (function() {
 
 	var repository = [];
-	var apiUrl = 'https://www.food2fork.com/api/search?key=19594ddd6d58275e5bad1ff65e756847&q=shredded%20chicken';
-	const api_key = 'f5fc4952d07bf798483eadb4b15ac453';
+	var apiUrl = 'https://www.food2fork.com/api/search?key=ccb84aaee2358b6062f530d0b1d41a56&q=shredded%20chicken';
+	const api_key = 'ccb84aaee2358b6062f530d0b1d41a56';
 
 
 
@@ -99,7 +99,6 @@ var cookbookRepository = (function() {
 		closeButtonElement.addEventListener('click', hideModal);
 
 		var titleElement = document.createElement('a');
-		titleElement.setAttribute("class", "the-link")
 		titleElement.innerText = title;
 		titleElement.setAttribute("href", text)
 

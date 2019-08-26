@@ -12,7 +12,7 @@ body {
 
 
 
-h1, h2, h3, p{
+h1, h2, h3, p {
 	text-align: left;
 
 }
@@ -28,7 +28,7 @@ h1{
 	margin-left: 45px;
 }
 
-h2{
+h2, a{
 	text-shadow:
 		-2px -2px 0 #3B4CCA,
 		2px -2px 0 #3B4CCA,
@@ -36,8 +36,6 @@ h2{
 		2px 2px 0 #3B4CCA;
 	color: #FFDE00;
 	font-size: 30px;
-/*	margin-left: 45px;
-*/
 }
 
 header{
@@ -150,7 +148,7 @@ button{
   padding: 15px;
   width: 100%;
   max-width: 700px;
-  text-align: left;
+/*  text-align: left;*/
 }
 
 .modal-close {
@@ -169,30 +167,18 @@ button{
 }
 
 .modal a {
-  text-decoration: none;
-  margin-bottom: 20px;
-  text-align: center;
-  color: blue;
-  font-size: 20px;
-}
-
-.the-link {
   margin-top: 0;
   text-align: center;
   text-transform: capitalize;
-	text-shadow:
-		-2px -2px 0 #3B4CCA,
-		2px -2px 0 #3B4CCA,
-		-2px 2px 0 #3B4CCA,
-		2px 2px 0 #3B4CCA;
-	color: #FFDE00;
-	font-size: 30px;
+
 }
+
 
 .pokemon-pic{
 	width: 300px;
 	height: auto;
 	float: right;
 	margin-right: 200px;
+	margin-top: 25px;
 
 }
