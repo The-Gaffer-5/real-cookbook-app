@@ -4,7 +4,7 @@
 // 3a52622cafe3f0ee396ddbe3169d969c
 // 88576575acb15f4b695f012e315da478
 // ccb84aaee2358b6062f530d0b1d41a56
-
+// b5f3be6998620f899b0c5e8ab8f80438
 
 
 var cookbookRepository = (function() {
@@ -16,7 +16,7 @@ var cookbookRepository = (function() {
 
 	function sendSearch(){
 		var info = document.getElementById("mySearch").value;
-		apiUrl = 'https://www.food2fork.com/api/search?key=88576575acb15f4b695f012e315da478&q=' + info;
+		apiUrl = 'https://www.food2fork.com/api/search?key=b5f3be6998620f899b0c5e8ab8f80438&q=' + info;
 		//alert(info)
 	}
 
