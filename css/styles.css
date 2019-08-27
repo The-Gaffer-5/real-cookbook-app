@@ -5,7 +5,6 @@
 body {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	/*grid-gap: 10px;*/
 	grid-auto-rows: minmax(100px, auto);
 	background-color: #c5c0bc;
 }
@@ -17,32 +16,8 @@ h1, h2, h3, p {
 
 }
 
-h1{
-	text-shadow:
-		-2px -2px 0 #3B4CCA,
-		2px -2px 0 #3B4CCA,
-		-2px 2px 0 #3B4CCA,
-		2px 2px 0 #3B4CCA;
-	color: #FFDE00;
-	font-size: 50px;
-	margin-left: 45px;
-}
 
-h2, a{
-	text-shadow:
-		-2px -2px 0 #3B4CCA,
-		2px -2px 0 #3B4CCA,
-		-2px 2px 0 #3B4CCA,
-		2px 2px 0 #3B4CCA;
-	color: #FFDE00;
-	font-size: 30px;
-}
 
-header{
-	background-color: #c5c0bc;
-	grid-column-start: 1;
-	grid-column-end: 3;
-}
 
 footer{
 	background-color: #c5c0bc;
@@ -51,21 +26,19 @@ footer{
 	padding-bottom: 300px;
 }
 
+.navbar{
+	display: block;
+	grid-column: 12;
+	text-align: center;
+}
+
+
 .screen {
-	background-color: #82974c;
-	width: 80%;
 
-	margin-left: 40px;
-	padding-bottom: 200px;
-	padding-top: 50px;
-	padding-right: 50px;
+	grid-column: 12;
+	background-color: #c5c0bc;
 }
 
-.right {
-	/*background: url(../css/img/static.jpeg);*/
-	margin-right: 40px;
-	margin-bottom: 2200px;
-}
 
 .tallest {
 	color: purple;
@@ -100,7 +73,7 @@ li {
 
 }
 
-button{
+.btn-primary{
 	font-family: 'Sigmar One', cursive;
 	font-size: 20px;
 	width: 100%;
@@ -113,72 +86,5 @@ button{
 
 
 
-/*--------------------------MODAL------------------------*/
-
-#modal-container {
-  display: none;
-}
-
-#modal-container.is-visible {
-  position: fixed;
-  padding: 20px;
-  box-sizing: border-box;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  
-  /* to show it above other content */
-  z-index: 999; 
-  
-  /* to allow scrolling if the screen is not high enough*/
-  overflow: auto; 
-  
-  /* this is used to center the modal */
-  display: grid;
-  text-align: center;
-}
-
-.modal {
-  margin: auto;
-  display: inline-block;
-  box-sizing: border-box;
-  background: #fff;
-  padding: 15px;
-  width: 100%;
-  max-width: 700px;
-/*  text-align: left;*/
-}
-
-.modal-close {
-  float: right;
-  -webkit-appearance: none;
-  border: 0;
-  background: none;
-  color: #777;
-  text-decoration: underline;
-}
-
-.modal h2 {
-  margin-top: 0;
-  text-align: center;
-  text-transform: capitalize;
-}
-
-.modal a {
-  margin-top: 0;
-  text-align: center;
-  text-transform: capitalize;
-
-}
 
 
-.pokemon-pic{
-	width: 300px;
-	height: auto;
-	float: right;
-	margin-right: 200px;
-	margin-top: 25px;
-
-}
