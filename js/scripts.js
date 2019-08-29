@@ -136,7 +136,6 @@ function firstInit(){
 	$(".openScreen").attr("style", "display: none;");
 	$(".navbar").removeAttr("style");
 	$(".cardDeckContainer").removeAttr("style");
-	changeSearch();
 }
 
 function changeSearch(){
