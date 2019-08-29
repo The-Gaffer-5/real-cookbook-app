@@ -33,8 +33,12 @@ h1, a{
 }
 
 .card-img-top:hover{
-	transform: scale(1.1);
-	transition-duration: 500ms;
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	        transform: scale(1.1);
+	-webkit-transition-duration: 500ms;
+	     -o-transition-duration: 500ms;
+	        transition-duration: 500ms;
 }
 
 .card-text{
@@ -55,7 +59,9 @@ h1, a{
 .btn-primary:hover{
 	background-color: #c9713a;
 	border-color: #c9713a;
-	transition-duration: 200ms;
+	-webkit-transition-duration: 200ms;
+	     -o-transition-duration: 200ms;
+	        transition-duration: 200ms;
 }
 
 .card{
@@ -63,8 +69,12 @@ h1, a{
 }
 
 .card:hover{
-	transform: scale(1.02);
-	transition-duration: 200ms;
+	-webkit-transform: scale(1.02);
+	    -ms-transform: scale(1.02);
+	        transform: scale(1.02);
+	-webkit-transition-duration: 200ms;
+	     -o-transition-duration: 200ms;
+	        transition-duration: 200ms;
 }
 
 .link-div{
@@ -148,11 +158,29 @@ button{
 .mm-title:hover{
 	text-decoration: none;
 	color: #000;
-	transition-duration: 200ms;
+	-webkit-transition-duration: 200ms;
+	     -o-transition-duration: 200ms;
+	        transition-duration: 200ms;
 }
 
 .openTitle{
 	font-size: 80px;
+	color: #fff;
+}
+
+.firstSearch ::-webkit-input-placeholder{
+	color: #fff;
+}
+
+.firstSearch ::-moz-placeholder{
+	color: #fff;
+}
+
+.firstSearch :-ms-input-placeholder{
+	color: #fff;
+}
+
+.firstSearch ::-ms-input-placeholder{
 	color: #fff;
 }
 
@@ -166,6 +194,8 @@ button{
 
 .openScreen{
 	height: 100vh;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../css/img/kitchen.jpg) center center;
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../css/img/kitchen.jpg) center center;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../css/img/kitchen.jpg) center center;
     width: 100%;
     min-height:100%;
