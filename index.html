@@ -1,88 +1,88 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="dist/css/styles.min.css">
-</head>
-<body>
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="dist/css/styles.min.css">
+	</head>
+	<body>
 
 
 
-<!--LANDINGPAGE-->
-<div class="openScreen">
-	<div class="row">
-		<div class="firstSearch col-md-12 col-md-offset-5">
-			<h1 class="openTitle">What's for dinner?</h1>
-		    <input class="col-sm-4 form-rounded" type="text" placeholder="Type in an ingredient..." aria-label="Search" id="mySearch">
-		    <button class="btn btn-mdb-color btn-rounded btn-sm my-0 ml-sm-2" id="myButton" type="button" onclick="firstInit(); loadCards(); changeSearch()" return false>Search</button>
+	<!--LANDINGPAGE-->
+	<div class="openScreen">
+	  <div class="row">
+	    <div class="firstSearch col-md-12 col-md-offset-5">
+		  <h1 class="openTitle">What's for dinner?</h1>
+			<input class="col-sm-4 form-rounded" type="text" placeholder="Type in an ingredient..." aria-label="Search" id="mySearch">
+			<button class="btn btn-mdb-color btn-rounded btn-sm my-0 ml-sm-2" id="myButton" type="button" onclick="firstInit(); loadCards(); changeSearch()" return false>Search</button>
 		</div>
+	  </div>
 	</div>
-</div>
 
 
 
 
 
-<!--HEADER-->
-<nav class="navbar navbar-expand-sm" style="display: none">
-  <div class="navbar-collapse" id="navbarSupportedContent" id="theNav">
-  	<h1 class="mainTitle col-6 navbar-brand">What's for Dinner?</h1>
-      <input class="mySecondSearch col-sm-4 form-rounded" type="text" placeholder="" aria-label="Search" id="mySearch">
-      <button class=" 2nd btn btn-mdb-color btn-rounded btn-sm my-0 ml-sm-2" id="mySecondButton" type="button" onclick="reset(); loadCards();" return false>Search</button>
-  </div>
-</nav>
+	<!--HEADER-->
+	<nav class="navbar navbar-expand-sm" style="display: none">
+	  <div class="navbar-collapse" id="navbarSupportedContent" id="theNav">
+	  	<h1 class="mainTitle col-6 navbar-brand">What's for Dinner?</h1>
+	      <input class="mySecondSearch col-sm-4 form-rounded" type="text" placeholder="" aria-label="Search" id="mySearch">
+	      <button class=" 2nd btn btn-mdb-color btn-rounded btn-sm my-0 ml-sm-2" id="mySecondButton" type="button" onclick="reset(); loadCards();" return false>Search</button>
+	  </div>
+	</nav>
 
 
 
-<!-- CARD -->
-<div class="cardDeckContainer" style="display: none">
-	<div class="card-deck"></div>
-</div>
-
-
-
-
-
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title col-11 text-center" id="writeNameHere"></h5>
-    	  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-      	  	<span aria-hidden="true">&times;</span>
-    	  </button>
-      </div>
-      <div class="modal-body">
-        <img id="theImage" src="" width="450px">
-        <div class="link-div">
-        	<a class="theLink" target="_blank">Open Recipe</a>
-    	</div>
-      </div>
-      <div class="modal-footer">
-      	<div class="button-div">
-        	<button type="button" class="btn btn-secondary" data-dismiss="modal">Go Home</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+	<!-- CARD -->
+	<div class="cardDeckContainer" style="display: none">
+		<div class="card-deck"></div>
+	</div>
 
 
 
 
 
 
-	<script
-	  src="https://code.jquery.com/jquery-3.3.1.min.js"
-	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	  crossorigin="anonymous">
-  	</script>
-  	 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="dist/js/scripts.min.js"></script>
-</body>
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title col-11 text-center" id="writeNameHere"></h5>
+	    	  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	      	  	<span aria-hidden="true">&times;</span>
+	    	  </button>
+	      </div>
+	      <div class="modal-body">
+	        <img id="theImage" src="" width="450px">
+	        <div class="link-div">
+	        	<a class="theLink" target="_blank">Open Recipe</a>
+	    	</div>
+	      </div>
+	      <div class="modal-footer">
+	      	<div class="button-div">
+	        	<button type="button" class="btn btn-secondary" data-dismiss="modal">Go Home</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+
+
+
+
+		<script
+		  src="https://code.jquery.com/jquery-3.3.1.min.js"
+		  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		  crossorigin="anonymous">
+	  	</script>
+	  	 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="dist/js/scripts.min.js"></script>
+	</body>
 </html>
